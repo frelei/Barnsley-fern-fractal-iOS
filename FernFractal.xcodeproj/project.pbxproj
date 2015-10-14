@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5B036D171A59987A000BABEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B036D161A59987A000BABEA /* AppDelegate.swift */; };
-		5B036D191A59987A000BABEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B036D181A59987A000BABEA /* ViewController.swift */; };
+		5B036D191A59987A000BABEA /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B036D181A59987A000BABEA /* SceneViewController.swift */; };
 		5B036D1C1A59987A000BABEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B036D1A1A59987A000BABEA /* Main.storyboard */; };
 		5B036D1E1A59987A000BABEA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B036D1D1A59987A000BABEA /* Images.xcassets */; };
 		5B036D211A59987A000BABEA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B036D1F1A59987A000BABEA /* LaunchScreen.xib */; };
 		5B036D2D1A59987A000BABEA /* FernFractalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B036D2C1A59987A000BABEA /* FernFractalTests.swift */; };
+		5B036D371A599898000BABEA /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B036D361A599898000BABEA /* SceneKit.framework */; };
+		5B036D391A59989E000BABEA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B036D381A59989E000BABEA /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		5B036D111A59987A000BABEA /* FernFractal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FernFractal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B036D151A59987A000BABEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B036D161A59987A000BABEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B036D181A59987A000BABEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B036D181A59987A000BABEA /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
 		5B036D1B1A59987A000BABEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B036D1D1A59987A000BABEA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5B036D201A59987A000BABEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5B036D261A59987A000BABEA /* FernFractalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FernFractalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B036D2B1A59987A000BABEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B036D2C1A59987A000BABEA /* FernFractalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FernFractalTests.swift; sourceTree = "<group>"; };
+		5B036D361A599898000BABEA /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		5B036D381A59989E000BABEA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B036D391A59989E000BABEA /* QuartzCore.framework in Frameworks */,
+				5B036D371A599898000BABEA /* SceneKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,8 @@
 		5B036D081A59987A000BABEA = {
 			isa = PBXGroup;
 			children = (
+				5B036D381A59989E000BABEA /* QuartzCore.framework */,
+				5B036D361A599898000BABEA /* SceneKit.framework */,
 				5B036D131A59987A000BABEA /* FernFractal */,
 				5B036D291A59987A000BABEA /* FernFractalTests */,
 				5B036D121A59987A000BABEA /* Products */,
@@ -77,8 +85,7 @@
 		5B036D131A59987A000BABEA /* FernFractal */ = {
 			isa = PBXGroup;
 			children = (
-				5B036D161A59987A000BABEA /* AppDelegate.swift */,
-				5B036D181A59987A000BABEA /* ViewController.swift */,
+				5B036D181A59987A000BABEA /* SceneViewController.swift */,
 				5B036D1A1A59987A000BABEA /* Main.storyboard */,
 				5B036D1D1A59987A000BABEA /* Images.xcassets */,
 				5B036D1F1A59987A000BABEA /* LaunchScreen.xib */,
@@ -90,6 +97,7 @@
 		5B036D141A59987A000BABEA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5B036D161A59987A000BABEA /* AppDelegate.swift */,
 				5B036D151A59987A000BABEA /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -156,6 +164,7 @@
 		5B036D091A59987A000BABEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Rodrigo Leite";
 				TargetAttributes = {
@@ -212,7 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B036D191A59987A000BABEA /* ViewController.swift in Sources */,
+				5B036D191A59987A000BABEA /* SceneViewController.swift in Sources */,
 				5B036D171A59987A000BABEA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FernFractal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -349,6 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FernFractal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -407,6 +418,7 @@
 				5B036D321A59987A000BABEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B036D331A59987A000BABEA /* Build configuration list for PBXNativeTarget "FernFractalTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +427,7 @@
 				5B036D351A59987A000BABEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
